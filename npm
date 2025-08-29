@@ -1,5 +1,9 @@
 server side
 sudo PORT=3004 pm2 start app.js --name shopfrombharat-API
+
+chack API is working fine
+-------------------------
+https://api.shopfrombharat.com/website/faq-page
 ----------------------------------------------------------------
 Claint side
 
@@ -17,3 +21,6 @@ export const WEBSITE_URL = "https://www.shopfrombharat.com";
 
 sudo PORT=3005 pm2 start npm --name shopfrombharat -- start
 pm2 delete shopfrombharat
+
+
+
