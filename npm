@@ -1,2 +1,19 @@
- sudo PORT=3005 pm2 start npm --name shopfrombharat -- start
+server side
+sudo PORT=3004 pm2 start app.js --name shopfrombharat-API
+----------------------------------------------------------------
+Claint side
+
+Change location = client/src/lib 
+next nano constant.js 
+and update API link 
+
+(
+export const API_URL = "https://api.shopfrombharat.com";
+//export const API_URL = "http://localhost:3004";
+export const BASE_URL = "https://www.shopfrombharat.com";
+export const WEBSITE_URL = "https://www.shopfrombharat.com";
+)
+
+
+sudo PORT=3005 pm2 start npm --name shopfrombharat -- start
 pm2 delete shopfrombharat
